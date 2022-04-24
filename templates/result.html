@@ -50,10 +50,10 @@ body {
 		<div class="results">
 			{% if prediction==1 %}
 				<h1>Prediction: <span class='danger'>Opps! You have DIABETES.</span></h1>
-				<img class="gif" src="{{ url_for('static', filename='diabetes.svg') }}" alt="Diabetes Image">
+				<img class="gif" src="{{ url_for('image', filename='diabetes.svg') }}" alt="Diabetes Image">
 			{% elif prediction==0 %}
 				<h1>Prediction: <span class='safe'>Wow ! You DON'T have diabetes.</span></h1>
-				<img class="gif1" src="{{ url_for('static', filename='no-diabetes.svg') }}" alt="Not Diabetes Image">
+				<img class="gif1" src="{{ url_for('image', filename='no-diabetes.svg') }}" alt="Not Diabetes Image">
 			{% endif %}
 		</div>
 
